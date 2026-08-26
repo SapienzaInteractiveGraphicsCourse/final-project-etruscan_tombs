@@ -201,7 +201,7 @@ function createRoomWalls(room) {
     });
 
     const LeftTexture = textureLoader.load(
-            "../src/assets/textures/tombs/laterale2_.png"
+            "assets/textures/tombs/laterale2_.png"
         );
     LeftTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -244,7 +244,7 @@ function createRoomWalls(room) {
 
     // AFFRESCO
     const texture = textureLoader.load(
-        "../src/assets/textures/tombs/laterale2_.png"
+        "assets/textures/tombs/laterale2_.png"
     );
 
     texture.colorSpace = THREE.SRGBColorSpace;
@@ -274,7 +274,7 @@ function createRoomWalls(room) {
      // Parete fondo
 
     const backWallTexture = textureLoader.load(
-        "../src/assets/textures/tombs/fondo 2_.png"
+        "assets/textures/tombs/fondo 2_.png"
     );
     backWallTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -307,7 +307,7 @@ function createRoomWalls(room) {
 function createRoomRoof(room) {
 
     const RoofTexture = textureLoader.load(
-            "../src/assets/textures/tombs/beam2.png"
+            "assets/textures/tombs/beam2.png"
         );
     RoofTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -366,7 +366,7 @@ function createRoomRoof(room) {
 function createCentralBeam(room) {
 
     const BeamTexture = textureLoader.load(
-            "../src/assets/textures/tombs/soffitto2.png"
+            "assets/textures/tombs/soffitto2.png"
         );
     BeamTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -551,7 +551,7 @@ function createRelic(room) {
 
     gltfLoader.load(
 
-        "../src/assets/models/kantharos.glb",
+        "assets/models/kantharos.glb",
 
         (gltf) => {
 

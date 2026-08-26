@@ -185,7 +185,7 @@ function createRoomFloor(room) {
 function createRoomWalls(room) {
 
     const LeftTexture = textureLoader.load(
-                "../src/assets/textures/tombs/laterale 5sx_.png"
+                "assets/textures/tombs/laterale 5sx_.png"
             );
     LeftTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -220,7 +220,7 @@ function createRoomWalls(room) {
     // MURO DESTRA
 
     const RightTexture = textureLoader.load(
-                "../src/assets/textures/tombs/laterale5.png"
+                "assets/textures/tombs/laterale5.png"
             );
     RightTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -244,7 +244,7 @@ function createRoomWalls(room) {
      // Parete fondo
 
     const backWallTexture = textureLoader.load(
-        "../src/assets/textures/tombs/fondo5_.png"
+        "assets/textures/tombs/fondo5_.png"
     );
     backWallTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -277,7 +277,7 @@ function createRoomWalls(room) {
 function createRoomRoof(room) {
 
     const roofTexture = textureLoader.load(
-                "../src/assets/textures/tombs/beam2.png"
+                "assets/textures/tombs/beam2.png"
             );
     roofTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -337,7 +337,7 @@ function createRoomRoof(room) {
 function createCentralBeam(room) {
 
     const BeamTexture = textureLoader.load(
-                "../src/assets/textures/tombs/soffitto2.png"
+                "assets/textures/tombs/soffitto2.png"
             );
     BeamTexture.colorSpace = THREE.SRGBColorSpace;
 

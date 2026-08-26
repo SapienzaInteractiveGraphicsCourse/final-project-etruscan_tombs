@@ -2658,7 +2658,7 @@ function populateMap() {
             <div class="map-container">
 
                 <img
-                    src="../src/assets/textures/map/map.png"
+                    src="assets/textures/map/map.png"
                     alt="Necropolis Map">
 
             </div>

@@ -23,7 +23,7 @@ export function createSacredChamber(scene) {
 function createSacredWall(chamber) {
 
     const texture = textureLoader.load(
-        "../src/assets/textures/Corniolo.png"
+        "assets/textures/Corniolo.png"
     );
 
     texture.colorSpace = THREE.SRGBColorSpace;

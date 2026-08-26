@@ -185,16 +185,10 @@ function createRoomFloor(room) {
 
 function createRoomWalls(room) {
 
-    const stoneMaterial = new THREE.MeshStandardMaterial({
-
-        color: 0x9a8b75
-
-    });
-
     // Parete sinistra
 
     const LeftTexture = textureLoader.load(
-        "../src/assets/textures/tomb1/Parete2SX.png"
+        "assets/textures/tomb1/Parete2SX.png"
     );
     LeftTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -228,7 +222,7 @@ function createRoomWalls(room) {
 
     
     const RightTexture = textureLoader.load(
-        "../src/assets/textures/tomb1/parete2DX.png"
+        "assets/textures/tomb1/parete2DX.png"
     );
     RightTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -251,7 +245,7 @@ function createRoomWalls(room) {
      // Parete fondo
 
     const backWallTexture = textureLoader.load(
-        "../src/assets/textures/tomb1/Frontale.png"
+        "assets/textures/tomb1/Frontale.png"
     );
     backWallTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -285,7 +279,7 @@ function createRoomRoof(room) {
 
 
     const roofTexture = textureLoader.load(
-        "../src/assets/textures/tomb1/soffitto2.png"
+        "assets/textures/tomb1/soffitto2.png"
     );
     roofTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -345,7 +339,7 @@ function createCentralBeam(room) {
 
     
     const beamTexture = textureLoader.load(
-        "../src/assets/textures/tomb1/soffitto.png"
+        "assets/textures/tomb1/soffitto.png"
     );
     beamTexture.colorSpace = THREE.SRGBColorSpace;
 

@@ -3,7 +3,7 @@ import { addCollider } from "./collision.js";
 const textureLoader = new THREE.TextureLoader();
 
 const stoneTexture = textureLoader.load(
-    "../src/assets/textures/muro1.png"
+    "assets/textures/muro1.png"
 );
 
 stoneTexture.wrapS = THREE.RepeatWrapping;
@@ -17,7 +17,7 @@ const stoneMaterial = new THREE.MeshStandardMaterial({
 });
 
 const pillarTexture = textureLoader.load(
-    "../src/assets/textures/archi.png"
+    "assets/textures/archi.png"
 );
 
 pillarTexture.wrapS = THREE.RepeatWrapping;
@@ -30,7 +30,7 @@ const pillarMaterial = new THREE.MeshStandardMaterial({
 });
 
 const beamTexture = textureLoader.load(
-    "../src/assets/textures/archi.png"
+    "assets/textures/archi.png"
 );
 
 beamTexture.wrapS = THREE.RepeatWrapping;
@@ -90,11 +90,11 @@ export function createEntrance(scene) {
 
     // Texture aiuola
     const hedgeTexture = textureLoader.load(
-        "../src/assets/textures/aiuola.png"
+        "assets/textures/aiuola.png"
     );
 
     const hedgeNormal = textureLoader.load(
-        "../src/assets/textures/aiuola_normal.png"
+        "assets/textures/aiuola_normal.png"
     );
 
     // Ripetizione texture

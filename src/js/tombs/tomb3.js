@@ -182,7 +182,7 @@ function createCorridorFloor(entrance){
 function createDustyWall(entrance) {
 
     const texture = textureLoader.load(
-        "../src/assets/textures/tomb1/polvere.png"
+        "assets/textures/tomb1/polvere.png"
     );
 
     texture.colorSpace = THREE.SRGBColorSpace;
@@ -331,7 +331,7 @@ function createRoomFloor(room){
 function createRoomWalls(room){
 
     const WallTexture = textureLoader.load(
-                "../src/assets/textures/tombs/laterale3_.png"
+                "assets/textures/tombs/laterale3_.png"
             );
     WallTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -387,44 +387,9 @@ function createRoomWalls(room){
 
     addCollider(rightWall);
 
-    //const texture = textureLoader.load(
-      //  "../src/assets/textures/tombs/fondo 3_.png"
-    //);
-
-    //texture.colorSpace = THREE.SRGBColorSpace;
-
-    //const frescoMaterial =
-      //  new THREE.MeshStandardMaterial({
-
-        //    map:texture,
-          //  transparent:true,
-            //side:THREE.DoubleSide
-
-        //});
-
-    //const fresco = new THREE.Mesh(
-
-        //new THREE.PlaneGeometry(
-            //4,
-          //  2
-        //),
-
-      //  frescoMaterial
-
-    //);
-
-    //fresco.position.set(
-      //  26.84,
-       // 1,
-        //-30.8
-    //);
-
-    //fresco.rotation.y = -Math.PI/2;
-
-    //room.add(fresco);
 
     const backWallTexture = textureLoader.load(
-        "../src/assets/textures/tombs/fondo 3_.png"
+        "assets/textures/tombs/fondo 3_.png"
     );
 
     backWallTexture.colorSpace =
@@ -472,7 +437,7 @@ function createRoomWalls(room){
 function createRoomRoof(room) {
 
     const RoofTexture = textureLoader.load(
-                "../src/assets/textures/tombs/beam2.png"
+                "assets/textures/tombs/beam2.png"
             );
     RoofTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -537,7 +502,7 @@ function createRoomRoof(room) {
 function createCentralBeam(room) {
 
     const BeamTexture = textureLoader.load(
-                "../src/assets/textures/tombs/soffitto2.png"
+                "assets/textures/tombs/soffitto2.png"
             );
     BeamTexture.colorSpace = THREE.SRGBColorSpace;
 
@@ -762,7 +727,7 @@ function createSecretRelic(room) {
 
     gltfLoader.load(
 
-        "../src/assets/models/bronze_figurine.glb",
+        "assets/models/bronze_figurine.glb",
 
         (gltf) => {
 

@@ -42,7 +42,7 @@ function createUrn(tomb1, x, z, hasRelic) {
 
     gltfLoader.load(
 
-        "../src/assets/models/etruscan_olla.glb",
+        "assets/models/etruscan_olla.glb",
 
         (gltf) => {
 

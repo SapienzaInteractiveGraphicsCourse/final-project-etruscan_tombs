@@ -162,7 +162,7 @@ function createCypress() {
 const textureLoader = new THREE.TextureLoader();
 
 const cloudTexture = textureLoader.load(
-    "../src/assets/textures/nuvola.png"
+    "assets/textures/nuvola.png"
 );
 
 function createClouds(scene) {

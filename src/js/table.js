@@ -146,7 +146,7 @@ export function createTable(scene) {
 
 
     const baseTexture = textureLoader.load(
-    "../src/assets/textures/pavimento.jpg"
+    "assets/textures/pavimento.jpg"
     );
 
     baseTexture.wrapS = THREE.RepeatWrapping;
@@ -445,7 +445,7 @@ export function createTable(scene) {
 
     loadTool(
 
-        "../src/assets/models/brush.glb",
+        "assets/models/brush.glb",
 
         new THREE.Vector3(-0.35,0.9,-0.35),
 
@@ -463,7 +463,7 @@ export function createTable(scene) {
 
     loadTool(
 
-        "../src/assets/models/small_trowel.glb",
+        "assets/models/small_trowel.glb",
 
         new THREE.Vector3(0.35,1.1,-0.35),
 
@@ -481,7 +481,7 @@ export function createTable(scene) {
 
     loadTool(
 
-        "../src/assets/models/multi_tool_knife.glb",
+        "assets/models/multi_tool_knife.glb",
 
         new THREE.Vector3(-0.60,1,-0.30),
 
@@ -499,7 +499,7 @@ export function createTable(scene) {
 
     loadTool(
 
-        "../src/assets/models/rope.glb",
+        "assets/models/rope.glb",
 
         new THREE.Vector3(-0.65,1.01,-0.7),
 
@@ -517,7 +517,7 @@ export function createTable(scene) {
 
     loadTool(
 
-        "../src/assets/models/pen.glb",
+        "assets/models/pen.glb",
 
         new THREE.Vector3(-0.60,1.01,-0.1),
 
@@ -559,7 +559,7 @@ export function createTable(scene) {
 
     loadTool(
 
-        "../src/assets/models/pottery_fragment.glb",
+        "assets/models/pottery_fragment.glb",
 
         new THREE.Vector3(0.55, 1, 0.5),
 
@@ -577,7 +577,7 @@ export function createTable(scene) {
 
     loadTool(
 
-        "../src/assets/models/pickaxe.glb",
+        "assets/models/pickaxe.glb",
 
         new THREE.Vector3(1.65,0.5,-0.7),
 

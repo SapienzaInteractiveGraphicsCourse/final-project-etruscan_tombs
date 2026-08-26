@@ -3,7 +3,7 @@ import * as THREE from "three";
 const textureLoader = new THREE.TextureLoader();
 
 const grassTexture = textureLoader.load(
-    "../src/assets/textures/prato.png"
+    "assets/textures/prato.png"
 );
 //ripete texture
 grassTexture.wrapS = THREE.RepeatWrapping;
@@ -29,7 +29,7 @@ export function createWorld(scene) {
     
     // Texture sentiero
     const pathTexture = textureLoader.load(
-        "../src/assets/textures/sentiero3.png"
+        "assets/textures/sentiero3.png"
     );
 
     pathTexture.wrapS = THREE.RepeatWrapping;

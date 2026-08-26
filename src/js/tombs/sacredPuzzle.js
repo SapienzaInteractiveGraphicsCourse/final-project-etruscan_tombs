@@ -112,20 +112,20 @@ function createRelicModel(name, relic) {
     switch (relic) {
 
         case 1:
-            modelPath = "../src/assets/models/necklace.glb";
+            modelPath = "assets/models/necklace.glb";
             scale = 0.01;
             rotationY = 0;
             positionY=  1.28;
             break;
 
         case 2:
-            modelPath = "../src/assets/models/kantharos.glb";
+            modelPath = "assets/models/kantharos.glb";
             scale = 3;
             rotationY=Math.PI;
             break;
 
         case 3:
-            modelPath = "../src/assets/models/bronze_figurine.glb";
+            modelPath = "assets/models/bronze_figurine.glb";
             scale = 3.5;
             rotationY= Math.PI/4;
             break;

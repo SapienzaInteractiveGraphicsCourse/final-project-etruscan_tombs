@@ -747,7 +747,7 @@ function createSarcophagus(room) {
 
     gltfLoader.load(
 
-        "../src/assets/models/etruscan_female_sarcophagus.glb",
+        "assets/models/etruscan_female_sarcophagus.glb",
 
         (gltf) => {
 
