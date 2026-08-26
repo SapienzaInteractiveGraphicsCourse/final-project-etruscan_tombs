@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Etruscan Tombs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- INTRO -->
+    <!-- ===================================================== -->
+
+    <div id="intro-screen" class="screen">
+
+        <div id="intro-box" class="menu-window">
+
+            <h1>THE ETRUSCAN TOMBS</h1>
+
+            <h2>Secrets of Tarquinia</h2>
+
+            <p class="unesco">
+                Inspired by the UNESCO World Heritage Site
+                of the Necropolis of Tarquinia
+            </p>
+
+            <hr>
+
+            <p class="story">
+
+                Welcome to the Necropolis of Tarquinia.
+
+                <br><br>
+
+                Explore the ancient tombs, discover their history,
+                and uncover the three sacred relics hidden for centuries.
+
+                <br><br>
+
+                <strong>Only then will the Sacred Chamber open.</strong>
+
+            </p>
+
+            <button id="startButton" class="menu-button">
+
+                ENTER THE NECROPOLIS
+
+            </button>
+
+            <div class="controls">
+
+                <h3>Controls</h3>
+
+                <p><strong>W A S D</strong> — Move</p>
+
+                <p><strong>Mouse</strong> — Look Around</p>
+
+                <p><strong>E</strong> — Interact</p>
+
+                <p><strong>F</strong> — Inventory</p>
+
+                <p><strong>Esc</strong> — Pause</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- PAUSE -->
+    <!-- ===================================================== -->
+
+    <div id="pause-screen" class="screen">
+
+        <div id="pause-box" class="menu-window">
+
+            <h1>PAUSED</h1>
+
+            <button id="resumeButton" class="menu-button">
+
+                Resume Game
+
+            </button>
+
+            <h3>Controls</h3>
+
+            <p><strong>W A S D</strong> — Move</p>
+
+            <p><strong>Mouse</strong> — Look Around</p>
+
+            <p><strong>E</strong> — Interact</p>
+
+            <p><strong>F</strong> — Open Inventory</p>
+
+            <p><strong>Esc</strong> — Pause</p>
+
+            <button id="menuButton" class="menu-button">
+
+                Return to Main Menu
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- CONFIRM -->
+    <!-- ===================================================== -->
+
+    <div id="confirm-screen" class="screen">
+
+        <div id="confirm-box" class="menu-window">
+
+            <h2>Return to Main Menu?</h2>
+
+            <p>Current progress will be lost.</p>
+
+            <div class="confirm-buttons">
+
+                <button id="confirmYes" class="menu-button">
+
+                    YES
+
+                </button>
+
+                <button id="confirmNo" class="menu-button">
+
+                    NO
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- PROMPTS -->
+    <!-- ===================================================== -->
+
+    <div id="interactive-prompt"></div>
+
+    <div id="objective-message">
+    <div id="tutorial-message"></div>
+
+    </div>
+
+
+
+   <!-- ===================================================== -->
+    <!-- EQUIPMENT -->
+    <!-- ===================================================== -->
+
+    <div id="equipment-screen" class="screen">
+
+        <div id="equipment-window" class="panel-window equipment-panel">
+
+            <h2>Explorer's Equipment</h2>
+
+            <p>
+
+                Prepare your backpack before entering the
+                Etruscan Necropolis.
+
+            </p>
+
+            <div class="selected-counter">
+
+                <strong>Selected tools:</strong>
+
+                <span id="selected-tools-count">
+
+                    0 / 3
+
+                </span>
+
+            </div>
+
+            <hr>
+
+            <h3>Tools</h3>
+
+            <div class="equipment-list">
+
+                 <!-- sinistra -->
+                <label class="equipment-item">
+                    <input class="tool-checkbox" type="checkbox" value="torch">
+                    🏮 Lantern
+                </label>
+
+                <label class="equipment-item">
+                    <input class="tool-checkbox" type="checkbox" value="pickaxe">
+                    ⛏ Pickaxe
+                </label>
+
+                <label class="equipment-item">
+                    <input class="tool-checkbox" type="checkbox" value="brush">
+                    🖌 Archaeological Brush
+                </label>
+
+                <label class="equipment-item">
+                    <input class="tool-checkbox" type="checkbox" value="trowel">
+                    🪏 Small Trowel
+                </label>
+
+                <label class="equipment-item">
+                    <input class="tool-checkbox" type="checkbox" value="knife">
+                    🔪 Multi-tool Knife
+                </label>
+
+                <label class="equipment-item">
+                    <input class="tool-checkbox" type="checkbox" value="rope">
+                    🪢 Rope
+                </label>
+
+                <label class="equipment-item">
+                    <input class="tool-checkbox" type="checkbox" value="pen">
+                    🖊 Pen
+                </label>
+
+                <label class="equipment-item">
+                    <input class="tool-checkbox" type="checkbox" value="stone">
+                    🪨 Stone
+                </label>
+
+                <label class="equipment-item">
+                    <input class="tool-checkbox" type="checkbox" value="fragment">
+                    🏺 Pottery Fragment
+                </label>
+
+            </div>
+
+            <hr>
+
+            <h3>DOCUMENTS</h3>
+
+            <div class="documents-list">
+
+                🗺 Map<br>
+
+                📄 Information Sheet
+
+            </div>
+
+            <button
+                id="collectEquipment"
+                class="game-button">
+
+                Continue
+
+            </button>
+        </div>
+
+    </div>
+
+    <!-- ===================================================== -->
+    <!-- DOCUMENT VIEWER -->
+    <!-- ===================================================== -->
+
+    <div id="document-screen" class="screen">
+
+        <div id="document-window" class="panel-window">
+
+            <div class="inventory-header">
+
+                <h2 id="document-title">
+
+                    Document
+
+                </h2>
+
+                <button
+                    id="closeDocument"
+                    class="close-button">
+
+                    ✕
+
+                </button>
+
+            </div>
+
+            <div id="document-content">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Map -->
+    <div id="map-screen" class="screen"></div>
+
+    <div id="inventory-screen" class="screen">
+
+        <div id="inventory-window" class="panel-window">
+
+            <div class="inventory-header">
+
+                <h2>Inventory</h2>
+
+                <button
+                    id="closeInventory"
+                    class="close-button">
+
+                    ✕
+
+                </button>
+
+            </div>
+
+            <div class="inventory-tabs">
+
+                <button id="equipmentTab" class="inventory-tab active">
+                    Equipment
+                </button>
+
+                <button id="mapTab" class="inventory-tab">
+                    Map
+                </button>
+
+                <button id="documentsTab" class="inventory-tab">
+                    Documents
+                </button>
+
+            </div>
+
+            <div id="inventory-content" class="inventory-content">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================================== -->
+    <!-- EQUIPPED HUD -->
+    <!-- ===================================================== -->
+
+    <div id="equipped-hud">
+
+        <div id="equipped-title">
+
+            Equipped
+
+        </div>
+
+        <div id="equipped-item">
+
+            None
+
+        </div>
+
+    </div>
+
+    <!-- ===================================================== -->
+    <!-- RELIC MENU -->
+    <!-- ===================================================== -->
+
+    <div id="relic-screen" class="screen">
+
+        <div id="relic-window" class="panel-window">
+
+            <div class="inventory-header">
+
+                <h2>Choose a Relic</h2>
+
+                <button
+                    id="closeRelicMenu"
+                    class="close-button">
+
+                    ✕
+
+                </button>
+
+            </div>
+
+            <div
+                id="relic-list"
+                class="inventory-content">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================================== -->
+    <!-- FINAL SCREEN -->
+    <!-- ===================================================== -->
+
+    <div id="final-screen" class="screen">
+
+        <div id="final-box" class="menu-window">
+
+            <h1>CONGRATULATIONS!</h1>
+
+            <p>
+
+                You have recovered the Three Sacred Relics
+                and uncovered the secrets of the
+                <strong>Necropolis of Tarquinia</strong>.
+
+            </p>
+
+            <p class="final-subtitle">
+
+                Inspired by the UNESCO World Heritage Site<br>
+                of the Necropolis of Tarquinia.
+
+            </p>
+
+            <hr>
+
+            <p>
+
+                Thank you for playing.
+
+            </p>
+
+            <p>
+
+                Created by<br>
+                <strong>Martina Leggiero</strong>
+
+            </p>
+
+            <p>
+
+                Interactive Graphics<br>
+                Sapienza University of Rome
+
+            </p>
+
+            <button
+                id="returnMenuButton"
+                class="menu-button">
+
+                Return to Main Menu
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
