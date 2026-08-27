@@ -96,9 +96,15 @@ loadingManager.onProgress = (url, loaded, total) => {
 
 loadingManager.onLoad = () => {
 
-    loadingScreen.classList.add("hidden");
+    loadingScreen.style.opacity = "0";
 
-    introScreen.style.display = "flex";
+    setTimeout(() => {
+
+        loadingScreen.style.display = "none";
+
+        introScreen.style.display = "flex";
+
+    },600);
 
 };
 
