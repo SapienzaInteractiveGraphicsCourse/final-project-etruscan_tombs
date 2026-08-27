@@ -2,6 +2,7 @@
 import * as THREE from "three";
 import { PointerLockControls } from "three/examples/jsm/controls/PointerLockControls.js";
 import "./style1.css";
+import { loadingManager } from "./js/loadingManager.js";
 import { createWorld } from "./js/world.js";
 import { createLights, ambientLight, sun } from "./js/lights.js";
 import { createEntrance } from "./js/entrance.js";
@@ -44,6 +45,24 @@ const camera = new THREE.PerspectiveCamera(
     1000
 );
 
+// Loading
+loadingManager.onProgress = (url, loaded, total) => {
+
+    const percent = Math.floor((loaded / total) * 100);
+
+    loadingFill.style.width = percent + "%";
+
+    loadingPercent.textContent = percent + "%";
+
+};
+
+loadingManager.onLoad = () => {
+
+    loadingScreen.classList.add("hidden");
+
+    introScreen.style.display = "flex";
+
+};
 //Renderer
 const renderer = new THREE.WebGLRenderer({
     antialias: true
