@@ -61,11 +61,25 @@ The player progresses through the following steps:
 
 ## Technologies
 
+### Programming Languages
+
 - JavaScript (ES6)
-- Three.js
-- Vite
 - HTML5
 - CSS3
+
+### Libraries & Frameworks
+
+- Three.js
+- PointerLockControls
+- GLTFLoader
+- Vite
+
+### Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- GitHub Pages
 
 ---
 
@@ -107,7 +121,7 @@ https://sapienzainteractivegraphicscourse.github.io/final-project-etruscan_tombs
 
 ## Project Structure
 
-```
+```text
 final-project-etruscan_tombs
 │
 ├── .github/
@@ -115,38 +129,38 @@ final-project-etruscan_tombs
 │
 ├── public/
 │   └── assets/
-│       ├── models/            GLB models (tools, relics, sarcophagus, decorative objects)
-│       └── textures/          Environment, tomb, UI and terrain textures
+│       ├── models/            GLB models (tools, relics, sarcophagus and decorative objects)
+│       └── textures/          Environment, terrain, frescoes and UI textures
 │
 ├── src/
 │   ├── js/
-│   │   ├── tombs/            Tombs, puzzles and Sacred Chamber logic
-│   │   ├── world.js          Terrain generation and world creation
-│   │   ├── player.js         First-person movement and player controls
-│   │   ├── gate.js           Main entrance gate logic
-│   │   ├── environment.js    Trees, clouds and environmental objects
-│   │   ├── inventory.js      Inventory and equipment management
-│   │   ├── documents.js      Historical documents and information panels
-│   │   ├── loadingManager.js Loading screen management
-│   │   └── ...               Additional gameplay modules
+│   │   ├── tombs/             Tombs, puzzles and Sacred Chamber logic
+│   │   ├── world.js           World generation
+│   │   ├── player.js          First-person player controller
+│   │   ├── gate.js            Main gate interaction
+│   │   ├── environment.js     Trees, clouds and environment
+│   │   ├── inventory.js       Inventory system
+│   │   ├── documents.js       Historical documents and information panels
+│   │   ├── loadingManager.js  Loading screen management
+│   │   └── ...                Additional gameplay modules
 │   │
-│   ├── main.js               Application entry point and render loop
-│   └── style1.css            Main application styles
+│   ├── main.js                Application entry point
+│   └── style1.css             Main stylesheet
 │
-├── index.html                Main HTML page
-├── package.json              Project dependencies and scripts
-├── vite.config.js            Vite configuration for GitHub Pages
-├── README.md                 Project documentation
-├── The_Etruscan_Tombs.pdf    Project report
+├── index.html                 Main HTML page
+├── package.json               Project dependencies
+├── vite.config.js             Vite configuration
+├── README.md                  Project documentation
+├── The_Etruscan_Tombs.pdf     Project report
 └── The-Etruscan-Tombs-Secrets-of-Tarquinia.pptx
-                              Project presentation
+                               Final presentation
 ```
 
 ---
 
-## Authors
+## Credits
 
-Developed by:
+### Developed by
 
 **Martina Leggiero**
 
@@ -155,3 +169,41 @@ Interactive Graphics
 Sapienza University of Rome
 
 Academic Year 2025–2026
+
+---
+
+## Acknowledgements
+
+This project was developed using open-source software and publicly available resources.
+
+### Software
+
+- Three.js
+- Vite
+- Visual Studio Code
+- Git & GitHub
+
+### 3D Models
+
+Some 3D models used in the project (including archaeological tools, relics and decorative objects) were obtained from **Sketchfab** under their respective licenses and adapted for integration into the game.
+
+### Historical References
+
+The archaeological environment, frescoes and tomb reconstructions were inspired by the **Necropolis of Tarquinia**, a UNESCO World Heritage Site, using publicly available historical and archaeological references.
+
+### Textures
+
+Several textures were created specifically for this project, while others were adapted from freely available resources to match the visual style of the game.
+
+---
+
+## Future Improvements
+
+Future developments could include:
+
+- Environmental audio and ambient sound effects.
+- Additional explorable tombs.
+- More advanced environmental puzzles.
+- Dynamic weather and day/night cycles.
+- Non-player characters (NPCs) to enrich the exploration experience.
+- Support for mobile devices through responsive touch controls and an optimized user interface.
