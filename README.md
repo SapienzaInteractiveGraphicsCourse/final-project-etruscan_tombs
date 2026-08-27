@@ -110,26 +110,36 @@ https://sapienzainteractivegraphicscourse.github.io/final-project-etruscan_tombs
 ```
 final-project-etruscan_tombs
 │
+├── .github/
+│   └── workflows/             GitHub Actions workflow for automatic deployment
+│
 ├── public/
 │   └── assets/
-│       ├── models/
-│       └── textures/
+│       ├── models/            GLB models (tools, relics, sarcophagus, decorative objects)
+│       └── textures/          Environment, tomb, UI and terrain textures
 │
 ├── src/
 │   ├── js/
-│   │   ├── tombs/
-│   │   ├── world.js
-│   │   ├── player.js
-│   │   ├── gate.js
-│   │   ├── environment.js
-│   │   └── ...
+│   │   ├── tombs/            Tombs, puzzles and Sacred Chamber logic
+│   │   ├── world.js          Terrain generation and world creation
+│   │   ├── player.js         First-person movement and player controls
+│   │   ├── gate.js           Main entrance gate logic
+│   │   ├── environment.js    Trees, clouds and environmental objects
+│   │   ├── inventory.js      Inventory and equipment management
+│   │   ├── documents.js      Historical documents and information panels
+│   │   ├── loadingManager.js Loading screen management
+│   │   └── ...               Additional gameplay modules
 │   │
-│   ├── main.js
-│   └── style.css
+│   ├── main.js               Application entry point and render loop
+│   └── style1.css            Main application styles
 │
-├── package.json
-├── vite.config.js
-└── README.md
+├── index.html                Main HTML page
+├── package.json              Project dependencies and scripts
+├── vite.config.js            Vite configuration for GitHub Pages
+├── README.md                 Project documentation
+├── The_Etruscan_Tombs.pdf    Project report
+└── The-Etruscan-Tombs-Secrets-of-Tarquinia.pptx
+                              Project presentation
 ```
 
 ---
