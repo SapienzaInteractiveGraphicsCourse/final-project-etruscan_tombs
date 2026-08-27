@@ -97,7 +97,9 @@ const worldPosition = new THREE.Vector3();
 // =====================================
 // UI
 // =====================================
-
+const loadingScreen = document.getElementById("loading-screen");
+const loadingFill = document.getElementById("loading-fill");
+const loadingPercent = document.getElementById("loading-percent");
 //Into
 const introScreen = document.getElementById("intro-screen");
 const startButton = document.getElementById("startButton");
