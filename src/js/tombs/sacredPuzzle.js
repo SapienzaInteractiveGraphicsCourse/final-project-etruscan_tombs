@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { addCollider, removeCollider} from "../collision.js";
 import { augursPedestal, leopardsPedestal, huntingPedestal, sealedPassage } from "./sacredChamber.js";
-
+import { loadingManager } from "../loadingManager.js";
 const gltfLoader = new GLTFLoader(loadingManager);
 let openingPassage = false;
 export const PEDESTAL = {

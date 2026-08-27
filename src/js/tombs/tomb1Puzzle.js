@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { gameState } from "../gameState.js";
 import { addCollider } from "../collision.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-
+import { loadingManager } from "../loadingManager.js";
 const gltfLoader = new GLTFLoader(loadingManager);
 
 
