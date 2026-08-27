@@ -186,7 +186,7 @@ function createRoomFloor(room) {
 function createRoomWalls(room) {
 
     const WallTexture = textureLoader.load(
-            "assets/textures/tombs/laterale4.png"
+            "assets/textures/tombs/laterale4_.png"
         );
     WallTexture.colorSpace = THREE.SRGBColorSpace;
 
