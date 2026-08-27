@@ -45,24 +45,7 @@ const camera = new THREE.PerspectiveCamera(
     1000
 );
 
-// Loading
-loadingManager.onProgress = (url, loaded, total) => {
 
-    const percent = Math.floor((loaded / total) * 100);
-
-    loadingFill.style.width = percent + "%";
-
-    loadingPercent.textContent = percent + "%";
-
-};
-
-loadingManager.onLoad = () => {
-
-    loadingScreen.classList.add("hidden");
-
-    introScreen.style.display = "flex";
-
-};
 //Renderer
 const renderer = new THREE.WebGLRenderer({
     antialias: true
@@ -100,6 +83,25 @@ const worldPosition = new THREE.Vector3();
 const loadingScreen = document.getElementById("loading-screen");
 const loadingFill = document.getElementById("loading-fill");
 const loadingPercent = document.getElementById("loading-percent");
+// Loading
+loadingManager.onProgress = (url, loaded, total) => {
+
+    const percent = Math.floor((loaded / total) * 100);
+
+    loadingFill.style.width = percent + "%";
+
+    loadingPercent.textContent = percent + "%";
+
+};
+
+loadingManager.onLoad = () => {
+
+    loadingScreen.classList.add("hidden");
+
+    introScreen.style.display = "flex";
+
+};
+
 //Into
 const introScreen = document.getElementById("intro-screen");
 const startButton = document.getElementById("startButton");
