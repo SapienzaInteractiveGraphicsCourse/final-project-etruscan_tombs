@@ -220,7 +220,7 @@ function createRoomWalls(room) {
     // MURO DESTRA
 
     const RightTexture = textureLoader.load(
-                "assets/textures/tombs/laterale5.png"
+                "assets/textures/tombs/laterale5_.png"
             );
     RightTexture.colorSpace = THREE.SRGBColorSpace;
 

@@ -232,7 +232,7 @@ function createRoomWalls(room) {
      // Parete fondo
 
     const backWallTexture = textureLoader.load(
-        "assets/textures/tomb1/fondo6_.png"
+        "assets/textures/tombs/fondo6_.png"
     );
     backWallTexture.colorSpace = THREE.SRGBColorSpace;
 
