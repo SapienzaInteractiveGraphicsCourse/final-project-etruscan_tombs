@@ -1,6 +1,7 @@
 import * as THREE from "three";
+import { loadingManager } from "./loadingManager.js";
 // Carico la texture una sola volta
-const textureLoader = new THREE.TextureLoader();
+const textureLoader = new THREE.TextureLoader(loadingManager);
 
 const grassTexture = textureLoader.load(
     "assets/textures/prato.png"

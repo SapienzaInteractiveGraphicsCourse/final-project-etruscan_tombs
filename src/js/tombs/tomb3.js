@@ -1,9 +1,9 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { addCollider } from "../collision.js";
-
-const textureLoader = new THREE.TextureLoader();
-const gltfLoader = new GLTFLoader();
+import { loadingManager } from "../loadingManager.js";
+const textureLoader = new THREE.TextureLoader(loadingManager);
+const gltfLoader = new GLTFLoader(loadingManager);
 
 export let tomb3;
 export let internalDoor3;

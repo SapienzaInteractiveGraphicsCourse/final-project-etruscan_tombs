@@ -1,8 +1,8 @@
 import * as THREE from "three";
 import { createTomb1Puzzle } from "./tomb1Puzzle.js";
-
+import { loadingManager } from "../loadingManager.js";
 import { addCollider } from "../collision.js";
-const textureLoader = new THREE.TextureLoader();
+const textureLoader = new THREE.TextureLoader(loadingManager);
 export let tomb1;
 export let internalDoor1;
 

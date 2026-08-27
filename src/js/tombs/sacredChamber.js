@@ -2,8 +2,8 @@ import * as THREE from "three";
 import { addCollider } from "../collision.js";
 
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-
-const gltfLoader = new GLTFLoader();
+import { loadingManager } from "../loadingManager.js";
+const gltfLoader = new GLTFLoader(loadingManager);
 
 export let finalSarcophagus;
 
@@ -13,7 +13,7 @@ export let augursPedestal;
 export let leopardsPedestal;
 export let huntingPedestal;
 
-const textureLoader = new THREE.TextureLoader();
+const textureLoader = new THREE.TextureLoader(loadingManager);
 
 export function createSacredRoom(roomGroup) {
 

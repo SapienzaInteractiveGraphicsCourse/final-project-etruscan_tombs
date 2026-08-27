@@ -1,8 +1,8 @@
 import * as THREE from "three";
-
+import { loadingManager } from "../loadingManager.js";
 import { addCollider } from "../collision.js";
 
-const textureLoader = new THREE.TextureLoader();
+const textureLoader = new THREE.TextureLoader(loadingManager);
 
 export let tomb6;
 export let internalDoor6;

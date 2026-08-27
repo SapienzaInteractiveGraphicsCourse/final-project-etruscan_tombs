@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { addCollider, removeCollider} from "../collision.js";
 import { gameState } from "../gameState.js";
+import { loadingManager } from "../loadingManager.js";
 
 export let sacredWall;
 export let wallRubble = [];
@@ -8,7 +9,7 @@ export let leftRubbleCollider;
 export let rightRubbleCollider;
 let chamberOpened = false;
 let chamberJustOpened = false;
-const textureLoader = new THREE.TextureLoader();
+const textureLoader = new THREE.TextureLoader(loadingManager);
 
 export function createSacredChamber(scene) {
 

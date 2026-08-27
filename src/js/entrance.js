@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { addCollider } from "./collision.js";
-const textureLoader = new THREE.TextureLoader();
+import { loadingManager } from "./loadingManager.js";
+const textureLoader = new THREE.TextureLoader(loadingManager);
 
 const stoneTexture = textureLoader.load(
     "assets/textures/muro1.png"

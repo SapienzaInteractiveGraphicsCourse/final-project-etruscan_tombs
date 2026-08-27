@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { addCollider } from "./collision.js";
-
+import { loadingManager } from "./loadingManager.js";
 const clouds = [];
 
 export function createEnvironment(scene) {
@@ -159,7 +159,7 @@ function createCypress() {
 
 }
 
-const textureLoader = new THREE.TextureLoader();
+const textureLoader = new THREE.TextureLoader(loadingManager);
 
 const cloudTexture = textureLoader.load(
     "assets/textures/nuvola.png"
