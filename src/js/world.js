@@ -1,12 +1,12 @@
 import * as THREE from "three";
 import { loadingManager } from "./loadingManager.js";
-// Carico la texture una sola volta
+
 const textureLoader = new THREE.TextureLoader(loadingManager);
 
 const grassTexture = textureLoader.load(
     "assets/textures/prato.png"
 );
-//ripete texture
+
 grassTexture.wrapS = THREE.RepeatWrapping;
 grassTexture.wrapT = THREE.RepeatWrapping;
 grassTexture.repeat.set(60, 60);
@@ -25,7 +25,6 @@ export function createWorld(scene) {
 
     ground.rotation.x = -Math.PI / 2;
     ground.position.set(0,0,0);
-    // Riceve le ombre
     ground.receiveShadow = true;
     
     // Texture sentiero
@@ -56,7 +55,6 @@ export function createWorld(scene) {
         0.01,
         37.5
     );
-    // Riceve le ombre
     path.receiveShadow = true;
     
     world.add(ground);
