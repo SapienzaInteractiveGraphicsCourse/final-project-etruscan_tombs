@@ -6,8 +6,6 @@ import { loadingManager } from "../loadingManager.js";
 const gltfLoader = new GLTFLoader(loadingManager);
 
 export const urns = [];
-export let relic;
-export let relicCollected = false;
 export function createTomb1Puzzle(tomb1) {
 
     createUrns(tomb1);
@@ -104,8 +102,6 @@ export function inspectUrn(urn) {
 }
 
 export function resetTomb1Puzzle() {
-
-    relicCollected = false;
 
     for (const urn of urns) {
 
