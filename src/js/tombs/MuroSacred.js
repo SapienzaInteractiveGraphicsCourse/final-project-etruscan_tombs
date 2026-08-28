@@ -38,9 +38,9 @@ function createSacredWall(chamber) {
     sacredWall = new THREE.Mesh(
 
         new THREE.BoxGeometry(
-            14,     // larghezza
-            8,      // altezza
-            1       // spessore
+            14,     
+            8,      
+            1       
         ),
 
         material
