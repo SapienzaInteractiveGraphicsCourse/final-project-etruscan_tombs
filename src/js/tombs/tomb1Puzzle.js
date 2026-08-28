@@ -5,29 +5,9 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { loadingManager } from "../loadingManager.js";
 const gltfLoader = new GLTFLoader(loadingManager);
 
-
-// ==========================
-// URNS
-// ==========================
-
 export const urns = [];
-
-// ==========================
-// RELIC
-// ==========================
-
 export let relic;
-
-// ==========================
-// STATO
-// ==========================
-
 export let relicCollected = false;
-
-// ==========================
-// CREAZIONE
-// ==========================
-
 export function createTomb1Puzzle(tomb1) {
 
     createUrns(tomb1);
@@ -96,7 +76,7 @@ export function createUrns(tomb1) {
 
 
 // ==========================
-// INTERAZZIONI
+// INTERAZIONI
 // ==========================
 
 export function inspectUrn(urn) {
