@@ -53,7 +53,6 @@ export function createTable(scene) {
 
     table = new THREE.Group();
 
-    // Materiale legno
     const woodMaterial = new THREE.MeshStandardMaterial({
         color: 0x8b5a2b
     });
@@ -282,9 +281,8 @@ export function createTable(scene) {
         emissiveIntensity: 2
     });
 
-    // ======================
+
     // Base
-    // ======================
 
     const lanternBase = new THREE.Mesh(
 
@@ -298,9 +296,8 @@ export function createTable(scene) {
 
     torch.add(lanternBase);
 
-    // ======================
+
     // Top
-    // ======================
 
     const lanternTop = new THREE.Mesh(
 
@@ -314,9 +311,8 @@ export function createTable(scene) {
 
     torch.add(lanternTop);
 
-    // ======================
+
     // Glass
-    // ======================
 
     const lanternGlass = new THREE.Mesh(
 
@@ -328,9 +324,9 @@ export function createTable(scene) {
 
     torch.add(lanternGlass);
 
-    // ======================
+
     // Vertical bars
-    // ======================
+
 
     const barGeometry =
         new THREE.CylinderGeometry(0.005, 0.005, 0.18);
@@ -345,9 +341,7 @@ export function createTable(scene) {
 
     torch.add(bar2);
 
-    // ======================
     // Handle
-    // ======================
 
     const lanternHandle = new THREE.Mesh(
 
@@ -369,9 +363,8 @@ export function createTable(scene) {
 
     torch.add(lanternHandle);
 
-    // ======================
+
     // Flame
-    // ======================
 
     const flame = new THREE.Mesh(
 
@@ -384,10 +377,8 @@ export function createTable(scene) {
     flame.position.y = -0.01;
 
     torch.add(flame);
-
-    // ======================
+ 
     // Position
-    // ======================
 
     torch.position.set(-0.9, 1.05, 0);
 
